@@ -1,6 +1,6 @@
 
 
-# Sound Burner (Float)
+# Sound Burner (Flex)
 
 
 
@@ -10,7 +10,7 @@ Here I post my progress in my studies and projects that I have implemented.
 This is my **second** html and css practice project.
 #
 
-I will soon change it from float technology to flexbox technology
-I think it will be tomorrow.
+
+I changed to flexbox positioning. Now i need to add JS.
 
 That's all! Smile and work in your spare time!
