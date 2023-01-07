@@ -6,6 +6,12 @@
   margin: 0;
   padding: 0;
 }
+*:hover {
+  transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
 body {
   font-family: "M PLUS 1p", sans-serif;
   font-size: 16px;
@@ -15,13 +21,14 @@ body {
 }
 
 h4 {
-    font-size: 16px;
-    font-weight: 800;
+  font-size: 16px;
+  font-weight: 800;
 }
 
-h5, p {
-    font-size: 14px;
-    font-weight: 300;
+h5,
+p {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 a {
@@ -37,12 +44,11 @@ header {
   font-size: 14px;
   box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
   padding: 10px 0;
-  float: left;
 }
 
 header .all-header {
-  width: 60%;
-  margin: 0 20%;
+  max-width: 1125px;
+  margin: 0 auto;
 }
 
 /* Стилизуем контейнер с языком */
@@ -59,25 +65,24 @@ header .all-header .lang a.active,
 header .all-header .lang a:hover {
   color: #000;
   border-bottom: 2px solid black;
-  margin-left: 10px;
 }
 
 /* Стилизуем контейнер со всем остальным наполнением шапки */
 header .all-header .header-main {
-  width: 100%;
-  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1125px;
+  margin-top: 20px;
 }
 
 /* Логотип */
 header .all-header .header-main img {
   height: 44px;
-  float: left;
 }
 
 /* Поиск */
 #search {
-  float: left;
   border: 0;
   background-color: #ececec;
   width: 360px;
@@ -86,14 +91,11 @@ header .all-header .header-main img {
   font-size: 12px;
   padding: 10px 20px;
   outline: none;
-  margin: 3px 10px;
 }
 
 /* Кнопка загрузки */
 header .all-header .header-main a {
-  float: left;
   color: #000;
-  margin: 15px 50px;
 }
 
 header .all-header .header-main a:hover {
@@ -101,32 +103,34 @@ header .all-header .header-main a:hover {
 }
 
 /* Кнопки Войти и Регистрация */
-header .all-header .header-main .btn {
+header .all-header .header-main .ar {
+  display: flex;
+}
+header .all-header .header-main .ar .btn {
   cursor: pointer;
-  float: right;
-  margin-left: 20px;
   border: 2px solid black;
   text-align: center;
   line-height: 40px;
+  margin: 0 10px;
 }
 
-header .all-header .header-main .btn.auth {
+header .all-header .header-main .ar .btn.auth {
   width: 86px;
   height: 40px;
 }
 
-header .all-header .header-main .btn.reg,
-header .all-header .header-main .btn.auth:hover {
+header .all-header .header-main .ar .btn.reg,
+header .all-header .header-main .ar .btn.auth:hover {
   color: #fff;
   background-color: #000;
 }
 
-header .all-header .header-main .btn.reg {
+header .all-header .header-main .ar .btn.reg {
   width: 136px;
   height: 40px;
 }
 
-header .all-header .header-main .btn.reg:hover {
+header .all-header .header-main .ar .btn.reg:hover {
   color: #000;
   background-color: #fff;
 }
@@ -134,69 +138,68 @@ header .all-header .header-main .btn.reg:hover {
 /* Основная часть сайта */
 
 main {
-    float: left;
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 main .section {
-    float: left;
-    max-width: 1125px;
-    margin: 50px 20%;
+  max-width: 1125px;
+  margin: 40px auto;
+}
+
+main .section .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Стилизуем заголовок категорий */
 main .section h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 main .section h3 span {
-    height: 2px;
-    display: inline-block;
-    margin-right: 15px;
-    margin-left: 40px;
-    margin-bottom: 7px;
-    width: 40px;
-    background-color: #000;
+  height: 2px;
+  display: inline-block;
+  margin: 7px 15px;
+  width: 40px;
+  background-color: #000;
 }
 
 /* Стилизуем блок с картинкой и подписью */
 main .section .img-block {
-    width: 350px;
-    margin: 20px 12px;
-    height: 311px;
-    float: left;
-    position: relative;
+  width: 350px;
+  height: 311px;
+  position: relative;
 }
 
 main .section .img-block img {
-    width: 350px;
-    height: 246px;
-    box-shadow: 4px 8px 16px rgba(99, 99, 99, 0.6);
-    margin-bottom: 20px;
+  width: 350px;
+  height: 246px;
+  box-shadow: 4px 8px 16px rgba(99, 99, 99, 0.6);
 }
 
 main .section .img-block .btn-play {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    right: -15px;
-    top: 156px;
-    /* display: none; */
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: -15px;
+  top: 156px;
 }
-
-/* main .section .img-block:hover .btn-play {
-    display: block;
-} */
 
 /* Стилизуем Пол */
 
-footer { 
-    width: 100%;
-    float: left;
-    background: #111111;
-    color: #fff;
-    text-align: center;
-    padding-top: 67px;
-    height: 160px;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #111111;
+  min-height: 160px;
+}
+
+footer p {
+  max-width: 1125px;
+  color: #fff;
+  text-align: center;
 }
