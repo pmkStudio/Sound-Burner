@@ -11,6 +11,7 @@ This is my **second** html and css practice project.
 #
 
 
-I changed to flexbox positioning. Now i need to add JS.
+This is my last change in this project.
+Now I am learning JS and BEM. And I understand that in order to work further on this project, I will need to completely rewrite it.
 
 That's all! Smile and work in your spare time!
