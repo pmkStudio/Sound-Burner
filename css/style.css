@@ -168,14 +168,14 @@ main .section h3 span {
 
 /* Стилизуем блок с картинкой и подписью */
 main .section .img-block {
-  width: 350px;
-  height: 311px;
+  width: 32%;
+  height: auto;
   position: relative;
 }
 
 main .section .img-block img {
-  width: 350px;
-  height: 246px;
+  width: 100%;
+  height: auto;
   box-shadow: 4px 8px 16px rgba(99, 99, 99, 0.6);
 }
 
